@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header with App name and greeting -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vertimeter"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAppName"
+        android:text="Hello, User 👋"
+        android:textSize="18sp" />
+
+    <!-- Feature Cards -->
+    <LinearLayout
+        android:id="@+id/llFeatureCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGreeting"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Vertical Jump Live Card -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp">
+            <!-- Image and text will be added here -->
+        </FrameLayout>
+
+        <!-- Other feature cards would be similarly structured -->
+    </LinearLayout>
+
+    <!-- History Section -->
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llFeatureCards"
+        android:text="History"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- History Items List -->
+    <LinearLayout
+        android:id="@+id/llHistoryItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvHistory"
+        android:layout_marginTop="10dp">
+
+        <!-- Single history item layout -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp">
+            <!-- Image and text will be added here -->
+        </FrameLayout>
+
+        <!-- Other history items would be similarly structured -->
+    </LinearLayout>
+
+</RelativeLayout>
