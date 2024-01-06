@@ -1,5 +1,7 @@
 # VertiMeter
 Team : Lan Lords
 
-### To compile and download the apk follow : <br>
+### Build and Compile using Android Studio Hedgehog <br>
+
+### Machine Learing Frameworks using MediaPipe : <br>
 https://developers.google.com/mediapipe/framework/getting_started/android
